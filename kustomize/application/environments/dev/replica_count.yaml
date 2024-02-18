@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: hello-kubernetes 
+  labels:  
+    name: hello-kubernetesspec:
+    replicas: 6 <------------- We want to change this to 6 in dev 
+--------------------------------------------------------------------
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: hello-kubernetes 
+  labels:  
+    name: hello-kubernetesspec:
+    replicas: 8 <------------- We want to change this to 8 in prd
